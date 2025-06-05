@@ -1,6 +1,6 @@
-# PHC Management and Operations Information System (PHCMOIS)
+# PHC Mobile Outreach Information System (PHCMOIS)
 
-A modern, cross-platform mobile application built with React Native and Expo for managing healthcare operations in Primary Health Centers (PHCs). This application streamlines patient management, appointment scheduling, and healthcare provider workflows.
+A modern, cross-platform mobile application built with React Native and Expo for managing healthcare operations in PHC Mobile and Satellite Clinics. This application streamlines patient management, appointment scheduling, and healthcare provider workflows.
 
 ## 🚀 Features
 
