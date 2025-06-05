@@ -1,0 +1,115 @@
+{
+  "expo": {
+    "name": "Public Healthcare Mobile Outreach Information Management System",
+    "shortName": "PHCMOIS",
+    "slug": "phcmois",
+    "version": "0.1.7",
+    "description": "A comprehensive mobile application for primary healthcare outreach and patient management in rural and remote areas.",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "phcmois",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "platforms": ["ios", "android", "web"],
+
+    "privacy": "public",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.caledonclinic.phcmois",
+      "buildNumber": "1.0.0",
+      "requireFullScreen": false,
+      "userInterfaceStyle": "automatic",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PHMOS needs camera access to capture patient photos and medical documentation for healthcare records.",
+        "NSMicrophoneUsageDescription": "PHMOS needs microphone access to record voice notes and audio documentation for patient care.",
+        "NSLocationWhenInUseUsageDescription": "PHMOS needs location access to track outreach visits and provide location-based healthcare services.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "PHMOS needs location access to track outreach visits and provide location-based healthcare services.",
+        "NSPhotoLibraryUsageDescription": "PHMOS needs photo library access to attach medical images and documentation to patient records.",
+        "NSPhotoLibraryAddUsageDescription": "PHMOS needs permission to save medical photos and documentation to your photo library.",
+        "NSContactsUsageDescription": "PHMOS needs contacts access to easily add patient contact information and emergency contacts.",
+        "NSCalendarsUsageDescription": "PHMOS needs calendar access to schedule and manage patient appointments and healthcare visits.",
+        "NSRemindersUsageDescription": "PHMOS needs reminders access to set medication and appointment reminders for patients.",
+        "NSBluetoothAlwaysUsageDescription": "PHMOS needs Bluetooth access to connect with medical devices and health monitoring equipment.",
+        "NSBluetoothPeripheralUsageDescription": "PHMOS needs Bluetooth access to communicate with medical devices for patient monitoring.",
+        "NSFaceIDUsageDescription": "PHMOS uses Face ID for secure authentication to protect sensitive patient health information.",
+        "NSUserNotificationsUsageDescription": "PHMOS needs notification access to send appointment reminders and important health alerts.",
+        "NSHealthShareUsageDescription": "PHMOS needs access to read health data to provide comprehensive patient care and monitoring.",
+        "NSHealthUpdateUsageDescription": "PHMOS needs access to update health data with patient vitals and medical information.",
+        "NSMotionUsageDescription": "PHMOS needs motion access to track healthcare worker activity during outreach visits.",
+        "NSSpeechRecognitionUsageDescription": "PHMOS needs speech recognition to transcribe voice notes and medical documentation.",
+        "NSLocalNetworkUsageDescription": "PHMOS needs local network access to sync data with nearby medical devices and systems."
+      }
+    },
+    "android": {
+      "package": "com.yourorganization.phcmois.healthcare",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#2563EB"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "RECEIVE_BOOT_COMPLETED",
+        "ACCESS_NOTIFICATION_POLICY",
+        "FOREGROUND_SERVICE",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "NFC",
+        "READ_PHONE_STATE",
+        "CALL_PHONE",
+        "SEND_SMS",
+        "READ_CONTACTS",
+        "WRITE_CONTACTS",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "SYSTEM_ALERT_WINDOW"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "name": "PHMOS Healthcare",
+      "shortName": "PHMOS",
+      "lang": "en",
+      "scope": "/",
+      "themeColor": "#2563EB",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#2563EB"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2563EB"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": "1.0.0"
+  }
+}
